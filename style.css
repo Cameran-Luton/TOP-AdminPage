@@ -16,7 +16,7 @@ body {
   color: white;
   display: grid;
   grid-template-columns: minmax(200px, 400px) 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: minmax(100px, 200px) 5fr;
   height: 100vh;
 }
 
@@ -43,10 +43,13 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: relative;
   grid-area: 1/2/2/3;
   background-color: var(--header-bg);
@@ -59,6 +62,74 @@ body {
   box-shadow: 5px 5px 5px lightgray;
 }
 
+.search {
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search img {
+  height: 30px;
+}
+.search .profile {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.search-bar {
+  margin-right: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--content-bg);
+  flex: 1;
+}
+.search p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.quick-items {
+  margin-left: 40px;
+  margin-right: 40px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile {
+  object-fit: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  color: black;
+  font-weight: 700;
+}
+.account p {
+  margin: 0;
+}
+.account .account-name {
+  font-size: 1.6rem;
+}
+
+.quick-btn {
+  border: 0px;
+  box-shadow: 2px 2px gray;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--sidebar-bg);
+  width: 100px;
+  height: 40px;
+}
 /* Fonts */
 
 .roboto-thin {
