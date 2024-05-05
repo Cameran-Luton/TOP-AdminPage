@@ -172,6 +172,7 @@ body {
 }
 
 .trending {
+  overflow: scroll;
   margin: 20px;
   margin-left: 0px;
   display: flex;
@@ -179,9 +180,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.trending p {
-  align-self: flex-start;
-}
+
 .card {
   overflow-y: auto;
   display: flex;
@@ -215,7 +214,6 @@ body {
   border: 1px solid lightgrey;
   border-radius: 20px;
   padding: 20px;
-  margin: 20px;
 }
 
 .announcement h3 {
@@ -231,6 +229,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   padding: 20px;
+  gap: 20px;
   box-shadow: 5px 5px 5px lightgray;
   border-radius: 20px;
   width: 100%;
@@ -244,7 +243,33 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
+.trending-account {
+  border: solid 1px lightgrey;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px lightgrey;
+  display: flex;
+  margin-left: 20px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.trending-account-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-weight: 400;
+}
+.trending-account-name h3 {
+  margin: 0;
+}
+.trending-account img {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
 /* Fonts */
 
 .roboto-thin {
